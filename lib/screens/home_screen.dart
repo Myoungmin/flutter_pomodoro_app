@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
             flex: 3,
             child: Center(
               child: IconButton(
-                  iconSize: 129,
+                  iconSize: 120,
                   color: Theme.of(context).cardColor,
                   onPressed: () {},
                   icon: const Icon(Icons.play_circle_outline)),
@@ -40,7 +40,17 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Flexible(
             flex: 1,
-            child: Container(),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).cardColor,
+              ),
+              child: Column(
+                children: const [
+                  Text('Pomodors'),
+                  Text('0'),
+                ],
+              ),
+            ),
           ),
         ],
       ),
