@@ -48,9 +48,26 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Theme.of(context).cardColor,
                     ),
                     child: Column(
-                      children: const [
-                        Text('Pomodors'),
-                        Text('0'),
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Pomodors',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600,
+                            color:
+                                Theme.of(context).textTheme.displayLarge!.color,
+                          ),
+                        ),
+                        Text(
+                          '0',
+                          style: TextStyle(
+                            fontSize: 58,
+                            fontWeight: FontWeight.w600,
+                            color:
+                                Theme.of(context).textTheme.displayLarge!.color,
+                          ),
+                        ),
                       ],
                     ),
                   ),
