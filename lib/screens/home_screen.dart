@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: IconButton(
                   iconSize: 120,
                   color: Theme.of(context).cardColor,
-                  onPressed: () {},
+                  onPressed: onStartPressed,
                   icon: const Icon(Icons.play_circle_outline)),
             ),
           ),
